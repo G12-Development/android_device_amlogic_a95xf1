@@ -9,3 +9,7 @@ DEVICE_PATH := device/google/beast
 $(call inherit-product, vendor/google/beast/beast-vendor.mk)
 
 $(call inherit-product, device/amlogic/g12-common/g12.mk)
+
+## Kernel Modules
+PRODUCT_PACKAGES += \
+    8822bs
