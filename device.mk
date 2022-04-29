@@ -4,15 +4,15 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/google/beast
+DEVICE_PATH := device/amlogic/a95xf1
 
-$(call inherit-product, vendor/google/beast/beast-vendor.mk)
+$(call inherit-product, vendor/amlogic/a95xf1/a95xf1-vendor.mk)
 
 $(call inherit-product, device/amlogic/g12-common/g12.mk)
 
 ## Bluetooth
-BOARD_HAVE_BLUETOOTH_RTK_TV := true
-include hardware/realtek/rtkbt/rtkbt.mk
+BOARD_HAVE_BLUETOOTH_RTK_TV := false
+#include hardware/realtek/rtkbt/rtkbt.mk
 
 ## Init-Files
 PRODUCT_COPY_FILES += \
