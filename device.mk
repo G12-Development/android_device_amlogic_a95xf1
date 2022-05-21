@@ -8,7 +8,7 @@ DEVICE_PATH := device/amlogic/a95xf1
 
 $(call inherit-product, vendor/amlogic/a95xf1/a95xf1-vendor.mk)
 
-$(call inherit-product, device/amlogic/g12-common/g12.mk)
+$(call inherit-product, device/amlogic/gx-common/gx.mk)
 
 ## Bluetooth
 BOARD_HAVE_BLUETOOTH_RTK_TV := false

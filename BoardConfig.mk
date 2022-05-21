@@ -6,7 +6,7 @@
 
 include vendor/amlogic/a95xf1/BoardConfigVendor.mk
 
-include device/amlogic/g12-common/BoardConfigCommon.mk
+include device/amlogic/gx-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/amlogic/a95xf1
 
@@ -23,6 +23,9 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 ## Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
+# SOC
+TARGET_AMLOGIC_SOC := gxl
 
 
 BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_bcmdhd
