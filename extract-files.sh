@@ -18,5 +18,6 @@ export DEVICE=a95xf1
 export DEVICE_COMMON=gx-common
 export VENDOR_COMMON=amlogic
 export VENDOR_DEVICE=amlogic
+export TARGET_SOC=gxl
 
 "./../../${VENDOR_COMMON}/${DEVICE_COMMON}/extract-files.sh" "$@"
