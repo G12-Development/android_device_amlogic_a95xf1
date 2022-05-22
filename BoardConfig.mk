@@ -32,20 +32,9 @@ BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
 # SOC
 TARGET_AMLOGIC_SOC := gxl
 
-
-BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_bcmdhd
-BOARD_WLAN_DEVICE := bcmdhd
+# Wifi
+BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_icomm
+BOARD_WLAN_DEVICE := icomm
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
-BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_bcmdhd
-WIFI_DRIVER_FW_PATH_AP := "/vendor/etc/wifi/6255/fw_bcm43455c0_ag.bin"
-WIFI_DRIVER_FW_PATH_STA := "vendor/etc/wifi/6255/fw_bcm43455c0_ag_apsta.bin"
-WIFI_DRIVER_FW_PATH_PARAM := "/sys/module/dhd/parameters/firmware_path"
-WPA_SUPPLICANT_VERSION := VER_0_8_X
-## Wi-Fi
-#BOARD_WLAN_DEVICE := realtek
-#BOARD_WPA_SUPPLICANT_DRIVER := NL80211
-#WPA_SUPPLICANT_VERSION := VER_0_8_X
-#BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_rtl
-#BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_rtl
-#WIFI_DRIVER_SOCKET_IFACE := wlan0
-#PRODUCT_CFI_INCLUDE_PATHS += hardware/realtek/wlan/wpa_supplicant_8_lib
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_icomm
+WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true

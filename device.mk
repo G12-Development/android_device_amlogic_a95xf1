@@ -20,8 +20,16 @@ PRODUCT_COPY_FILES += \
 
 ## Kernel Modules
 PRODUCT_PACKAGES += \
-    8822bs
+    ssv6051
 
 ## Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay
+
+# Wifi
+PRODUCT_CFI_INCLUDE_PATHS += \
+    hardware/amlogic/kernel-modules/icomm/wpa_supplicant_8_lib
+
+PRODUCT_COPY_FILES += \
+    hardware/amlogic/kernel-modules/icomm/ssv6051/ssv6051-wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/ssv6051/ssv6051-wifi.cfg \
+    hardware/amlogic/kernel-modules/icomm/ssv6051/image/ssv6051-sw.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/ssv6051/ssv6051-sw.bin
