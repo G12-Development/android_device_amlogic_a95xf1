@@ -7,3 +7,8 @@
 ## NRDP
 ro.vendor.nrdp.audio.mixer.buffersize=1024
 ro.vendor.nrdp.modelgroup=sabrina
+
+## Graphics
+ro.opengles.version=131072
+debug.renderengine.backend=gles
+debug.hwui.use_buffer_age=false
