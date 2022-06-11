@@ -1,6 +1,9 @@
 ### All blobs from this list, unless pinned and noted as otherwise,
 ##  are from adt2-user 9 PTT5.190307.001 5360859 dev-keys.
 
+# Keylayout
+vendor/usr/keylayout//Vendor_0001_Product_0001.kl
+
 # Wifi
 vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/wpa_supplicant.conf:vendor/etc/wifi/wpa_supplicant_overlay.conf
