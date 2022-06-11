@@ -13,11 +13,13 @@ DEVICE_PATH := device/amlogic/a95xf1
 ## Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := a95xf1
 
+TARGET_BOARD_PLATFORM := gxl
+
 ## DTB
 TARGET_DTB_NAME := a95xf1_2g
 
-GPU_TYPE := mali
-GPU_ARCH := utgard
+# GPU
+TARGET_AMLOGIC_GPU_ARCH := utgard
 
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
