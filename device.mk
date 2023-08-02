@@ -5,6 +5,7 @@
 #
 
 TARGET_HAVE_BLUETOOTH := false
+TARGET_HAVE_WIFIHAL := false
 
 ## Init-Files
 PRODUCT_COPY_FILES += \
