@@ -17,6 +17,7 @@ PRODUCT_PACKAGES += \
 
 ## Platform
 TARGET_AMLOGIC_SOC := gxl
+TARGET_USES_LEGACY_PARTITIONS := true
 
 ## Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -27,5 +28,5 @@ PRODUCT_COPY_FILES += \
     hardware/amlogic/kernel-modules/icomm/ssv6051/ssv6051-wifi.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/ssv6051/ssv6051-wifi.cfg \
     hardware/amlogic/kernel-modules/icomm/ssv6051/image/ssv6051-sw.bin:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/ssv6051/ssv6051-sw.bin
 
-$(call inherit-product, device/amlogic/gx-common/gx.mk)
+$(call inherit-product, device/amlogic/g12-common/g12.mk)
 $(call inherit-product, vendor/amlogic/a95xf1/a95xf1-vendor.mk)
